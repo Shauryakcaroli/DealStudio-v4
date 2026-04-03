@@ -1077,6 +1077,14 @@ function renderInsight(ins){
 
 /* ═══ BOOT ═══ */
 init();
+  
+  /* ═══ FOOTER CREDIT ═══ */
+document.querySelectorAll('.tab-panel').forEach(panel => {
+  const footer = document.createElement('div');
+  footer.className = 'ds-footer';
+  footer.innerHTML = '<span>Made by <span class="author">Shaurya Krishna Caroli</span></span>';
+  panel.appendChild(footer);
+});
 </script>
 </body>
 </html>
